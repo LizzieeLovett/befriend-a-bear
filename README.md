@@ -1,59 +1,151 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Befriend A Bear
 
-Welcome USER_NAME,
+## Overview
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Index
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## UX
 
-Another blue button should appear to click: _Open Browser_.
+### **Strategy**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The business goals of this website are:
+* 
 
-A blue button should appear to click: _Make Public_,
+The customer goals of this website are:
+* 
 
-Another blue button should appear to click: _Open Browser_.
+Visitors to this website are searching for:
+* 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+This website is the best way to help them achieve these things because:
+* 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Client stories
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+1. As a new visitor to the website, I want to easily navigate around the site so that I can find what I’m looking for as quickly as possible.
+2. As a new visitor to the website, I want to be able to find the rules of the game so that I can understand how to play.
+3. As a new visitor to the website, I want to be able to play the game soon after visiting the site to have fun.
+4. As a new visitor to the website, I want to understand how to fill out the form on the Contact page so that I can ask any questions I may have.
+5. As an interested user, I want to be able to share the game with my friends so that they can play too.
+6. As an interested user, I want to navigate to social media pages to learn of any other games available or in development.
+7. As a returning visitor to the website, I want to easily navigate to the contact page to give suggestions of game developments.
 
-## Updates Since The Instructional Video
+### **Scope**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Initial Feature Plan
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+These items must be completed for initial release:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* A Home page containing a game which can be played until the user either fails or completes the game and can then be restarted.
+* A contact form allowing the user to provide detailed descriptions of suggestions to improve or develop the game, or to ask questions about the game.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### **Structure**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### Consistency Predictability and Learnability:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+This website will follow convention for its navigational elements. Predictably, these will be found at the top right of the browser window on any screen size and will be consistent in their coloring and design (although smaller screen sizes will offer a drop down option for the menu, again following convention).
+Consistency will also be applied to the title on both pages and any other boxes of information a user may need to understand quickly when visiting a page for the first time.
+This will give the website a high learnability and will be largely intuitive for finding the game or moving through to the Contact page. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### Visibility:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The website will encapsulate the vast majority of the content of each page into the viewport so the user can immediately see and understand the purpose of the page.
 
----
+#### Feedback:
 
-Happy coding!
+Feedback will be added to the website for links as well as the submission button for the planned contact form. The form will also provide feedback should there be an error with any of the form entries.
+Whilst playing the game, feedback will highlight to the user the impacts of their decisions as well as the outcome of the game.
+
+### **Skeleton**
+
+#### Wireframe mockups: 
+
+Wireframes First Drafts:
+
+* [Home](assets/images/readme-images/wireframe-draft-home.jpg)
+* [Contact](assets/images/readme-images/wireframe-draft-contact.jpg)
+
+#### Implemented Features
+
+ 
+##### Home:
+ 
+
+ 
+##### Contact:
+ 
+
+ 
+#### Sprint 1 Features
+ 
+- 
+
+#### Sprint 2 Features (Future)
+
+- 
+ 
+### **Surface**
+
+#### Colour Scheme
+
+The website has a dark green colour scheme with brown accents to reinforce the game's forest setting.
+
+#### Typography
+
+
+
+## Technologies Used
+
+#### Languages
+- 
+
+#### Libraries and Frameworks
+- 
+
+#### Tools
+- 
+
+#### Other Resources
+- [Balsamiq](https://balsamiq.com/wireframes/) - This project used **Balsamiq** to create the draft wireframes.
+
+## Testing 
+ 
+
+
+## Challenges and Reflections
+
+
+
+## Deployment
+ 
+ ### Deploying the Project
+
+
+ 
+### How to run this project locally
+ 
+
+ 
+## Credits
+ 
+### Media
+
+
+ 
+### Code
+ 
+
+ 
+### Acknowledgements
+ 
+- 
+ 
+### Disclaimer
+ 
+The content of this website is for educational purposes only.
