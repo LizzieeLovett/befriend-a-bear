@@ -7,6 +7,7 @@ body {
     font-size: 15px;
     background-color: #165933;
     overflow-x: hidden;
+    color: #fff;
 }
 
 .row {
@@ -34,6 +35,11 @@ header {
     margin: 0;
     padding-top: 30px;
     letter-spacing: 0px;
+}
+
+.rules-col {
+    text-align: left;
+    padding-left: 30px;
 }
 
 .title-col {
@@ -76,6 +82,10 @@ header {
     .nav-col {
         padding-top: 70px;
         padding-right: 50px;
+    }
+    .rules-col {
+        padding-top: 70px;
+        padding-left: 50px;
     }
     .nav-dropdown {
         display: none;
