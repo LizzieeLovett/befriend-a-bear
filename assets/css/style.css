@@ -70,8 +70,8 @@ header {
 
 @media screen and (min-width: 767px) {
     .title-col {
-        font-size: 55px;
-        padding: 40px 20px 0;
+        font-size: 75px;
+        padding: 20px 0 0;
     }
     .nav-col {
         padding-top: 70px;
@@ -90,8 +90,8 @@ header {
 
 @media screen and (min-width: 1200px) {
     .title-col {
-        font-size: 70px;
-        padding: 40px 20px 0;
+        font-size: 90px;
+        padding: 40px 0 0;
     }
   }
 
@@ -148,6 +148,31 @@ main div {
     font-weight: bold;
 }
 
+#lives-box {
+    border-radius: 50%;
+    position: absolute;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    bottom: 8%;
+    margin-left: 5%;
+    text-align: center;
+    background-color: #b1efc7;
+    color: #6b5757;;
+}
+
+#next-box {
+    position: absolute;
+    font-size: 20px;
+    height: 30px;
+    width: 175px;
+    bottom: 10%;
+    right: 2%;
+    text-align: center;
+    background-color: #b1efc7;
+    color: #6b5757;;
+}
+
 @media screen and (min-width: 767px) {
     #images-row {
         margin: 15px 10% 0 10%;
@@ -164,6 +189,18 @@ main div {
     #options-box-2 {
         position: fixed;
         margin-left: 56%;
+    }
+    #lives-box {
+        font-size: 80px;
+        height: 100px;
+        width: 100px;
+        bottom: 10%;
+    }
+    #next-box {
+        font-size: 45px;
+        height: 75px;
+        width: 400px;
+        bottom: 11%;
     }
   }
 
