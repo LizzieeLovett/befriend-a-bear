@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+.row {
+    --bs-gutter-x: 0;
+}
+
 a {
     text-decoration: none;
     color: #b1efc7;
@@ -18,7 +22,7 @@ a:hover {
     color: #409d61;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
     body {
         font-size: 20px;
     }
@@ -43,7 +47,28 @@ header {
     padding-right: 30px;
 }
 
-@media screen and (min-width: 769px) {
+.btn-secondary {
+    background-color: #165933;
+    border-color: #b1efc7;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #b1efc7;
+    box-shadow: 0 0 0 0.25rem rgb(92 133 105 / 50%);
+}
+
+.dropdown-item {
+    color: #165933;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #fff;
+    background-color: #6b5757;
+}
+
+@media screen and (min-width: 767px) {
     .title-col {
         font-size: 55px;
         padding: 40px 20px 0;
@@ -57,7 +82,7 @@ header {
       }
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 767px) {
     .nav-item {
         display: none;
       }
@@ -87,3 +112,65 @@ footer a {
 }
 
 /* ---------------------------index.html--------------------------- */
+
+main div {
+    background-color: #b1efc7;
+    border-radius: 25px;
+}
+
+#images-row {
+    margin: 15px;
+    min-height: 150px;
+    position: relative;
+}
+
+#question-box {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    min-height: 50%;
+    width: 50%;
+    left: 25%;
+}
+
+.options-box {
+    margin: 10px auto 0;
+    background-color: #6b5757;
+    border: 5px solid #fff;
+    min-height: 60px;
+    width: 200px;
+    text-align: center;
+}
+
+.options-box:hover,
+.options-box:focus {
+    border: 6px solid #fff;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 767px) {
+    #images-row {
+        margin: 15px 10% 0 10%;
+        min-height: 200px;
+    }
+    .options-box {
+        display: inline-block;
+        width: 30%;
+    }
+    #options-box-1 {
+        position: fixed;
+        margin-left: 13%;
+    }
+    #options-box-2 {
+        position: fixed;
+        margin-left: 56%;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    #question-box {
+        min-height: 100%;
+        width: 100%;
+        left: 0;
+    }
+  }
