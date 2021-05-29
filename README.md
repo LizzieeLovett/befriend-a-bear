@@ -31,8 +31,9 @@ This website is the best way to help them achieve these things because:
 3. As a new visitor to the website, I want to be able to play the game soon after visiting the site to have fun.
 4. As a new visitor to the website, I want to understand how to fill out the form on the Contact page so that I can ask any questions I may have.
 5. As an interested user, I want to be able to share the game with my friends so that they can play too.
-6. As an interested user, I want to navigate to social media pages to learn of any other games available or in development.
-7. As a returning visitor to the website, I want to easily navigate to the contact page to give suggestions of game developments.
+6. As an interested user, I want to navigate to social media pages so that I can learn of any other games available or in development.
+7. As a returning visitor to the website, I want to easily navigate to the contact page so that I can give suggestions of game developments.
+8. As an animal lover, I want to be able to play a game related to animals so that I can learn more about them.
 
 ### **Scope**
 
