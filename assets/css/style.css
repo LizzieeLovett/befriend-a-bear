@@ -76,15 +76,17 @@ header {
 
 @media screen and (min-width: 767px) {
     .title-col {
-        font-size: 75px;
+        font-size: 55px;
         padding: 20px 0 0;
     }
+    .nav-col,
+    .rules-col {
+        padding-top: 50px;    
+    }
     .nav-col {
-        padding-top: 70px;
         padding-right: 50px;
     }
     .rules-col {
-        padding-top: 70px;
         padding-left: 50px;
     }
     .nav-dropdown {
@@ -100,7 +102,7 @@ header {
 
 @media screen and (min-width: 1200px) {
     .title-col {
-        font-size: 90px;
+        font-size: 65px;
         padding: 40px 0 0;
     }
   }
@@ -124,21 +126,28 @@ footer a {
 /* ---------------------------index.html--------------------------- */
 
 main div {
-    background-color: #b1efc7;
     border-radius: 25px;
 }
 
 #images-row {
     margin: 15px;
-    min-height: 150px;
+    height: 150px;
     position: relative;
 }
 
+#images-box {
+    background-color: #b1efc7;
+    height: 150px;
+    position: relative;
+    background: url(../images/website-images/home-bear.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
 #question-box {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     bottom: 0;
-    min-height: 50%;
+    height: 50%;
     width: 50%;
     left: 25%;
 }
@@ -147,7 +156,7 @@ main div {
     margin: 10px auto 0;
     background-color: #6b5757;
     border: 5px solid #fff;
-    min-height: 60px;
+    height: 60px;
     width: 200px;
     text-align: center;
 }
@@ -186,7 +195,10 @@ main div {
 @media screen and (min-width: 767px) {
     #images-row {
         margin: 15px 10% 0 10%;
-        min-height: 200px;
+        height: 42vh;
+    }
+    #images-box {
+        height: 40vh;
     }
     .options-box {
         display: inline-block;
@@ -201,14 +213,14 @@ main div {
         margin-left: 56%;
     }
     #lives-box {
-        font-size: 80px;
-        height: 100px;
-        width: 100px;
+        font-size: 50px;
+        height: 60px;
+        width: 60px;
         bottom: 10%;
     }
     #next-box {
-        font-size: 45px;
-        height: 75px;
+        font-size: 25px;
+        height: 40px;
         width: 400px;
         bottom: 11%;
     }
