@@ -25,6 +25,8 @@ function startGame() {
     document.getElementById("options-box-1").classList.remove("hide-me");
     document.getElementById("options-box-2").classList.remove("hide-me");
     document.getElementById("next-box").classList.add("hide-me");
+    document.getElementById("lives-remaining").innerText = 3;
+    document.getElementById("lives-remaining").classList.remove("hide-me");
 }
 
 function nextQuestion() {
