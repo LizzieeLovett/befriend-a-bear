@@ -179,27 +179,41 @@ main div {
 }
 
 #lives-remaining,
-#lives-box {
+#lives-box,
+#score-box,
+#score-total {
     position: absolute;
     text-align: center;
 }
 
-#lives-box {
+#lives-box,
+#score-box {
     border-radius: 50%;
-    font-size: 40px;
+    font-size: 50px;
     height: 50px;
     width: 50px;
-    bottom: 8%;
-    margin-left: 5%;
-    background-color: #b1efc7;
-    color: #6b5757;
+    color: #fff;
+    bottom: 9%;
 }
 
-#lives-remaining {
-    font-size: 20px;
-    bottom: 15%;
-    margin-left: 39%;
+#lives-box {
+    margin-left: 5%;
+}
+
+#score-box {
+    margin-left: 25%;
+}
+
+#lives-remaining,
+#score-total {
+    font-size: 25px;
+    bottom: -7%;
     color: #165933;
+}
+
+#lives-remaining,
+#score-total {
+    margin-left: 33%;
 }
 
 #next-box {
@@ -234,16 +248,24 @@ main div {
         position: fixed;
         margin-left: 56%;
     }
-    #lives-box {
+    #lives-box,
+    #score-box {
         font-size: 50px;
         height: 60px;
         width: 60px;
         bottom: 10%;
     }
-    #lives-remaining {
+    #lives-remaining,
+    #score-total {
         font-size: 25px;
         bottom: 12%;
         margin-left: 38%;
+    }
+    .description-span {
+        font-size: 15px;
+        position: inherit;
+        margin-top: 15px;
+        margin-left: 10px;
     }
     #next-box {
         font-size: 25px;
@@ -258,5 +280,8 @@ main div {
         min-height: 100%;
         width: 100%;
         left: 0;
+    }
+    .description-span {
+        display: none;
     }
   }

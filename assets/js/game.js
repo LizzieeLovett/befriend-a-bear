@@ -62,6 +62,7 @@
   let questionBoxTextId= document.getElementById("question-box-text");
   let livesRemainingId = document.getElementById("lives-remaining");
   let livesBoxId = document.getElementById("lives-box");
+  let scoreBoxId = document.getElementById("score-box");
 
   nextBoxId.addEventListener("click", nextClick);
   optionsBox1Id.addEventListener("click", checkAnswer1);
@@ -172,6 +173,7 @@ function nextQuestion() {
     optionsBox2Id.classList.remove("hide-me");
     nextBoxId.classList.add("hide-me");
     livesBoxId.classList.remove("hide-me");
+    scoreBoxId.classList.remove("hide-me");
 }
 
 function tryAgain() {
