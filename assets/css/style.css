@@ -164,9 +164,10 @@ main div {
 
 .options-box {
     margin: 10px auto 0;
+    padding: 0 5px;
     background-color: #6b5757;
     border: 5px solid #fff;
-    height: 60px;
+    height: 65px;
     width: 200px;
     text-align: center;
 }
