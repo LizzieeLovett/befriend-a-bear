@@ -56,7 +56,6 @@
 
   let difficultyNumber = 3;
   let questionNumber = 1;
-  let friendshipScore = 0;
   let nextBoxId = document.getElementById("next-box");
   let optionsBox1Id = document.getElementById("options-box-1");
   let optionsBox2Id = document.getElementById("options-box-2");
@@ -181,6 +180,6 @@ function nextQuestion() {
 function tryAgain() {
     difficultyNumber = 3;
     questionNumber = 1;
-    friendshipScore = 0;
+    scoreTotalId.innerHTML = 0;
     startGame();
 }
