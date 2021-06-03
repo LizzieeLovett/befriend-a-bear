@@ -23,6 +23,10 @@ a:hover {
     color: #409d61;
 }
 
+.hide-me {
+    display: none !important;
+}
+
 @media screen and (min-width: 767px) {
     body {
         font-size: 20px;
@@ -173,17 +177,28 @@ main div {
     font-weight: bold;
 }
 
+#lives-remaining,
+#lives-box {
+    position: absolute;
+    text-align: center;
+}
+
 #lives-box {
     border-radius: 50%;
-    position: absolute;
     font-size: 40px;
     height: 50px;
     width: 50px;
     bottom: 8%;
     margin-left: 5%;
-    text-align: center;
     background-color: #b1efc7;
-    color: #6b5757;;
+    color: #6b5757;
+}
+
+#lives-remaining {
+    font-size: 20px;
+    bottom: 15%;
+    margin-left: 39%;
+    color: #165933;
 }
 
 #next-box {
@@ -224,6 +239,11 @@ main div {
         width: 60px;
         bottom: 10%;
     }
+    #lives-remaining {
+        font-size: 25px;
+        bottom: 12%;
+        margin-left: 38%;
+    }
     #next-box {
         font-size: 25px;
         height: 40px;
@@ -239,7 +259,3 @@ main div {
         left: 0;
     }
   }
-
-.hide-me {
-    display: none !important;
-}
