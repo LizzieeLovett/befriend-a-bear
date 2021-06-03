@@ -56,6 +56,7 @@
 
   let difficultyNumber = 3;
   let questionNumber = 1;
+  let friendshipScore = 0;
   let nextBoxId = document.getElementById("next-box");
   let optionsBox1Id = document.getElementById("options-box-1");
   let optionsBox2Id = document.getElementById("options-box-2");
@@ -63,6 +64,7 @@
   let livesRemainingId = document.getElementById("lives-remaining");
   let livesBoxId = document.getElementById("lives-box");
   let scoreBoxId = document.getElementById("score-box");
+  let scoreTotalId = document.getElementById("score-total");
 
   nextBoxId.addEventListener("click", nextClick);
   optionsBox1Id.addEventListener("click", checkAnswer1);
@@ -82,7 +84,6 @@ function nextClick() {
 function startGame() {
     nextQuestion();
     livesRemainingId.innerText = difficultyNumber;
-    
 }
 
 function checkAnswer1() {
@@ -125,6 +126,7 @@ function correctAnswerGiven() {
     optionsBox1Id.classList.add("hide-me");
     optionsBox2Id.classList.add("hide-me");
     nextBoxId.classList.remove("hide-me");
+    scoreTotalId.innerText++;
 }
 
 function incorrectAnswerGiven() {
@@ -134,13 +136,14 @@ function incorrectAnswerGiven() {
     `);
     if (livesRemainingId.innerText == '0') {
         livesRemainingId.innerText = "";
-        questionBoxTextId.innerHTML += ". Ooh the bear is LIVID and you're out of lives! Click Try Again if you'd like to have another go at making friends.";
+        questionBoxTextId.innerHTML += ". The bear is LIVID and you're out of lives! Click Try Again if you'd like to have another go at making friends.";
         nextBoxId.innerHTML = "Try Again";
         optionsBox1Id.classList.add("hide-me");
         optionsBox2Id.classList.add("hide-me");
         nextBoxId.classList.remove("hide-me");
+        scoreTotalId.innerText--;
     } else {
-        livesRemainingId.innerText = document.getElementById("lives-remaining").innerText -1;
+        livesRemainingId.innerText--;
         questionNumber++;
         try {
             eval(`
@@ -154,10 +157,9 @@ function incorrectAnswerGiven() {
         optionsBox1Id.classList.add("hide-me");
         optionsBox2Id.classList.add("hide-me");
         nextBoxId.classList.remove("hide-me");
+        scoreTotalId.innerText--;
     }
-    }
-
-    
+}
 
 function nextQuestion() {
     questionBoxTextId.innerHTML = eval(`
@@ -179,5 +181,6 @@ function nextQuestion() {
 function tryAgain() {
     difficultyNumber = 3;
     questionNumber = 1;
+    friendshipScore = 0;
     startGame();
 }
