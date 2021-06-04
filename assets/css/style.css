@@ -27,6 +27,12 @@ a:hover {
     display: none !important;
 }
 
+h1,
+h3 {
+    text-align: center;
+    margin: 30px 10px 0 10px;
+}
+
 @media screen and (min-width: 767px) {
     body {
         font-size: 20px;
@@ -285,3 +291,12 @@ main div {
         display: none;
     }
   }
+
+  /* ---------------------------404.html--------------------------- */
+
+#style-404 img {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 40px;
+}
