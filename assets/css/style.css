@@ -33,6 +33,24 @@ h3 {
     margin: 30px 10px 0 10px;
 }
 
+button {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.how-to-play-modal-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index:99;
+}
+
 @media screen and (min-width: 767px) {
     body {
         font-size: 20px;
@@ -52,10 +70,26 @@ header {
     padding-left: 30px;
 }
 
-#how-to-play {
+.how-to-play {
     background-color: #b1efc7;
     color: #6b5757;
     border-color: #6b5757;
+}
+
+.how-to-play-modal {
+    background-color: #fff;
+    color: #409d61;
+    padding: 15px;
+    border-radius: 25px;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.how-to-play-modal h1 {
+    color: #165933;
+    margin: 0;
+    padding: 10px 0;
 }
 
 .title-col {

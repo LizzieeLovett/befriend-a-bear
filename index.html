@@ -13,10 +13,17 @@
       <header>
          <div class="row no-gutters" id="header-row">
             <div class="col-3 rules-col">
-               <button id="how-to-play">
+               <button id="open-how-to-play" class="how-to-play">
                   <i class="far fa-question-circle"></i>
                   How to play
                </button>
+               <div class="how-to-play-modal-container hide-me" id="how-to-play-container">
+                  <div class="how-to-play-modal">
+                     <h1>How to Play</h1>
+                     <p>To begin, press Start Game. You will then see a series of questions with two possible answers below them to choose from. You're remaining lives and Friendship score can be seen in the bottom left hand side of your screen.</p>
+                     <button id="close-how-to-play" class="how-to-play">Close</button>
+                  </div>
+               </div>
             </div>
             <div class="col-6 title-col">
                <a href="index.html" class="game-title">Befriend A Bear</a>
