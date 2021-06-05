@@ -52,6 +52,12 @@ header {
     padding-left: 30px;
 }
 
+#how-to-play {
+    background-color: #b1efc7;
+    color: #6b5757;
+    border-color: #6b5757;
+}
+
 .title-col {
     font-family: "Cabin Sketch", sans-serif;
     font-size: 40px;
@@ -179,9 +185,11 @@ main div {
 }
 
 .options-box:hover,
-.options-box:focus {
-    border: 6px solid #fff;
+.options-box:focus,
+#next-box:hover,
+#next-box:focus {
     font-weight: bold;
+    outline: #6b5757 auto 5px;
 }
 
 #lives-remaining,
