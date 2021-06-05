@@ -64,10 +64,15 @@
   let livesBoxId = document.getElementById("lives-box");
   let scoreBoxId = document.getElementById("score-box");
   let scoreTotalId = document.getElementById("score-total");
+  let openHowToPlayId = document.getElementById("open-how-to-play");
+  let closeHowToPlayId = document.getElementById("close-how-to-play");
+  let containerHowToPlayId = document.getElementById("how-to-play-container");
 
   nextBoxId.addEventListener("click", nextClick);
   optionsBox1Id.addEventListener("click", checkAnswer1);
   optionsBox2Id.addEventListener("click", checkAnswer2);
+  openHowToPlayId.addEventListener("click", toggleHide);
+  closeHowToPlayId.addEventListener("click", toggleHide);
 
 function nextClick() {
     let nextBoxValue = nextBoxId.innerText
@@ -182,4 +187,8 @@ function tryAgain() {
     questionNumber = 1;
     scoreTotalId.innerHTML = 0;
     startGame();
+}
+
+function toggleHide() {
+    containerHowToPlayId.classList.toggle("hide-me");
 }
