@@ -204,6 +204,17 @@ footer a {
     padding: 10px 0;
 }
 
+.fa-copy {
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.fa-copy:hover,
+.fa-copy:focus {
+    font-weight: bold;
+}
+
 /* ---------------------------index.html--------------------------- */
 
 #images-row {
