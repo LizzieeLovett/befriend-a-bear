@@ -229,6 +229,7 @@ footer a {
 .options-box {
     margin: 10px auto 0;
     padding: 0 5px;
+    display: block;
     background-color: #6b5757;
     border: 5px solid #fff;
     height: 65px;
