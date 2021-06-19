@@ -229,7 +229,7 @@ footer a {
 .options-box {
     margin: 10px auto 0;
     padding: 0 5px;
-    display: block;
+    display: block ;
     background-color: #6b5757;
     border: 5px solid #fff;
     height: 65px;
@@ -294,7 +294,7 @@ footer a {
     right: 2%;
     text-align: center;
     background-color: #b1efc7;
-    color: #6b5757;;
+    color: #6b5757;
 }
 
 @media screen and (min-width: 767px) {
@@ -360,6 +360,35 @@ footer a {
         display: none;
     }
   }
+
+  /* ---------------------------contact.html--------------------------- */
+
+.contact-form-container input,
+.contact-form-container select,
+.contact-form-container textarea {
+    color: #165933;
+    margin-top: 5px;
+}
+
+
+.contact-submit-button {
+    text-align: center;
+}
+
+.form-enquiry {
+    background-color: #b1efc7;
+    color: #6b5757;
+    border-color: #6b5757;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.form-enquiry:hover,
+.form-enquiry:focus {
+    font-weight: bold;
+    outline: #6b5757 auto 5px;
+}
+
 
   /* ---------------------------404.html--------------------------- */
 
