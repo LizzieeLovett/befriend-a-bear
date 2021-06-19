@@ -392,6 +392,10 @@ footer a {
     text-align: center;
 }
 
+#close-submit {
+    margin-top: 10px;
+}
+
 .form-enquiry {
     background-color: #b1efc7;
     color: #6b5757;
