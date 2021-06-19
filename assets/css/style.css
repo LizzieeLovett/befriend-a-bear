@@ -19,7 +19,8 @@ a {
     color: #b1efc7;
 }
 
-a:hover {
+a:hover,
+#open-share:hover {
     color: #409d61;
 }
 
@@ -49,6 +50,22 @@ button {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
     z-index:99;
+}
+
+.my-modal {
+    background-color: #fff;
+    color: #409d61;
+    padding: 15px;
+    border-radius: 25px;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.my-modal h1 {
+    color: #165933;
+    margin: 0;
+    padding: 10px 0;
 }
 
 ul {
@@ -83,22 +100,6 @@ header {
     color: #6b5757;
     border-color: #6b5757;
     font-size: 12px;
-}
-
-.how-to-play-modal {
-    background-color: #fff;
-    color: #409d61;
-    padding: 15px;
-    border-radius: 25px;
-    width: 500px;
-    max-width: 100%;
-    text-align: center;
-}
-
-.how-to-play-modal h1 {
-    color: #165933;
-    margin: 0;
-    padding: 10px 0;
 }
 
 .title-col {
@@ -186,22 +187,6 @@ footer a {
 #open-share {
     color: #165933;
     font-size: 22px;
-}
-
-.share-modal {
-    background-color: #fff;
-    color: #409d61;
-    padding: 15px;
-    border-radius: 25px;
-    width: 500px;
-    max-width: 100%;
-    text-align: center;
-}
-
-.share-modal h1 {
-    color: #165933;
-    margin: 0;
-    padding: 10px 0;
 }
 
 .fa-copy {
@@ -420,7 +405,6 @@ footer a {
     font-weight: bold;
     outline: #6b5757 auto 5px;
 }
-
 
   /* ---------------------------404.html--------------------------- */
 

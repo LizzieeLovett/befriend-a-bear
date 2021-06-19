@@ -50,23 +50,23 @@
                   <div class="row">
                      <div class="form-group col-12 col-md-6">
                         <label class="control-label" for="firstname">First Name</label>
-                        <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                        <input type="text" class="form-control validation-check" id="firstname" placeholder="First Name" required>
                      </div>
                      <div class="form-group col-12 col-md-6">
                         <label for="lastname">Last Name</label>
-                        <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                        <input type="text" class="form-control validation-check" id="lastname" placeholder="Last Name" required>
                      </div>
                   </div>
                   <div class="row">
                      <div class="form-group">
                         <label for="emailaddress">Email Address</label>
-                        <input type="email" class="form-control" id="emailaddress" placeholder="example@my-mail.co.uk" required>
+                        <input type="email" class="form-control validation-check" id="emailaddress" placeholder="example@my-mail.co.uk" required>
                      </div>
                   </div>
                   <div class="row">
                      <div class="form-group">
                         <label for="contact-type">Reason for contact</label>
-                        <select class="form-select" id="contact-type">
+                        <select class="form-select validation-check" id="contact-type">
                            <option selected>Select...</option>
                            <option value="game-suggestion">Game suggestion</option>
                            <option value="game-issue">Game issue</option>
@@ -78,15 +78,21 @@
                   <div class="row">
                      <div class="form-group">
                         <label for="details">Details</label>
-                        <textarea class="form-control" id="details" rows="3" placeholder=""></textarea>  
+                        <textarea class="form-control validation-check" id="details" rows="3" placeholder=""></textarea>  
                      </div>
                   </div>
                   <div class="row">
                      <div class="form-group contact-submit-button">
-                        <button type="submit" class="form-enquiry">Enquire Now!</button>
+                        <button id="contact-submit-button" type="submit" class="form-enquiry">Enquire Now!</button>
                      </div>
-                     <div class="modal">
-
+                     <div class="my-modal-container hide-me" id="submit-container">
+                        <div class="my-modal">
+                           <span id="submit-modal-text"></span>
+                           <div>
+                              <button id="close-submit" class="submit">Close</button>
+                           </div>
+                        </div>
+                     </div>
                      </div>
                   </div>
                </form>
