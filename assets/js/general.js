@@ -21,7 +21,7 @@ function openShare() {
 }
 
 function toggleHideShare() {
-    //containerShareId.classList.toggle("hide-me");
+    containerShareId.classList.toggle("hide-me");
 }
 
 // https://www.w3schools.com/howto/howto_js_copy_clipboard.asp to help me
