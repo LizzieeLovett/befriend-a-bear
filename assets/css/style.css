@@ -175,37 +175,44 @@ footer a {
 
 /* ---------------------------index.html--------------------------- */
 
-main div {
-    border-radius: 25px;
-}
-
 #images-row {
     margin: 15px;
     height: 150px;
     position: relative;
 }
 
-#images-box {
+.images-box {
     background-color: #b1efc7;
     height: 150px;
+}
+
+#images-box-1 {
     position: relative;
-    background: url(../images/website-images/home-bear.jpg) no-repeat center center fixed; 
+    background: url(../images/website-images/home-bear-1.jpg) no-repeat center center; 
     background-size: cover;
+    border-radius: 25% 0 0 25%;
+}
+
+#images-box-2 {
+    position: relative;
+    background: url(../images/website-images/home-bear-2.jpg) no-repeat center center; 
+    background-size: cover;
+    border-radius: 0 25% 25% 0;
 }
 
 #question-box {
     background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    bottom: 0;
-    height: 50%;
-    width: 70%;
-    left: 15%;
+    height: 150px;
+    line-height: 150px;
 }
 
 #question-box-text {
     color: #165933;
     text-align: center;
-    margin: 10px 15px;
+    margin: 0 15px;
+    vertical-align: middle;
+    line-height: normal;
+    display: inline-block;
 }
 
 .options-box {
@@ -281,8 +288,10 @@ main div {
         margin: 15px 10% 0 10%;
         height: 42vh;
     }
-    #images-box {
+    .images-box,
+    #question-box  {
         height: 40vh;
+        line-height: 40vh;
     }
     .options-box {
         display: inline-block;
@@ -328,6 +337,9 @@ main div {
         min-height: 100%;
         width: 100%;
         left: 0;
+    }
+    .images-box {
+        display: none;
     }
     .description-span {
         display: none;
