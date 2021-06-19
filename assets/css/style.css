@@ -239,7 +239,9 @@ footer a {
 .options-box:hover,
 .options-box:focus,
 #next-box:hover,
-#next-box:focus {
+#next-box:focus,
+.how-to-play:hover,
+.how-to-play:focus {
     font-weight: bold;
     outline: #6b5757 auto 5px;
 }
