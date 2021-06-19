@@ -68,11 +68,13 @@
   let closeHowToPlayId = document.getElementById("close-how-to-play");
   let containerHowToPlayId = document.getElementById("how-to-play-container");
 
+
   nextBoxId.addEventListener("click", nextClick);
   optionsBox1Id.addEventListener("click", checkAnswer1);
   optionsBox2Id.addEventListener("click", checkAnswer2);
-  openHowToPlayId.addEventListener("click", toggleHide);
-  closeHowToPlayId.addEventListener("click", toggleHide);
+  openHowToPlayId.addEventListener("click", toggleHideHTP);
+  closeHowToPlayId.addEventListener("click", toggleHideHTP);
+  
 
 function nextClick() {
     let nextBoxValue = nextBoxId.innerText
@@ -189,6 +191,6 @@ function tryAgain() {
     startGame();
 }
 
-function toggleHide() {
+function toggleHideHTP() {
     containerHowToPlayId.classList.toggle("hide-me");
 }

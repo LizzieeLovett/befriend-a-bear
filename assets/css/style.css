@@ -38,7 +38,7 @@ button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.how-to-play-modal-container {
+.my-modal-container {
     position: fixed;
     display: flex;
     align-items: center;
@@ -181,6 +181,27 @@ footer {
 footer a {
     color: #165933;
     font-size: 25px;
+}
+
+#open-share {
+    color: #165933;
+    font-size: 22px;
+}
+
+.share-modal {
+    background-color: #fff;
+    color: #409d61;
+    padding: 15px;
+    border-radius: 25px;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.share-modal h1 {
+    color: #165933;
+    margin: 0;
+    padding: 10px 0;
 }
 
 /* ---------------------------index.html--------------------------- */
