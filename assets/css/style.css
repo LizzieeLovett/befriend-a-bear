@@ -231,6 +231,7 @@ footer a {
     background-color: rgba(255, 255, 255, 0.7);
     height: 150px;
     line-height: 150px;
+    text-align: center;
 }
 
 #question-box-text {
