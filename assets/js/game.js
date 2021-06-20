@@ -88,6 +88,8 @@ function nextClick() {
 }
 
 function startGame() {
+    document.getElementById("images-box-1").classList.add("hide-me-small");
+    document.getElementById("question-box").classList.add("border-radius-small");
     nextQuestion();
     livesRemainingId.innerText = difficultyNumber;
 }

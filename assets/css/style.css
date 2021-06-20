@@ -78,6 +78,15 @@ ul {
     }
   }
 
+@media screen and (max-width: 767px) {
+    .hide-me-small {
+        display: none !important;
+    }
+    .border-radius-small {
+        border-radius: 25px !important;
+    }
+}
+
 /* ---------------------------Header--------------------------- */
 
 header {
@@ -369,9 +378,15 @@ footer a {
         min-height: 100%;
         width: 100%;
         left: 0;
-        border-radius: 25px;
+        border-radius: 0 0 25px 25px;
     }
-    .images-box {
+    #images-box-1 {
+        min-height: 100%;
+        width: 100%;
+        left: 0;
+        border-radius: 25px 25px 0 0;
+    }
+    #images-box-2 {
         display: none;
     }
     .description-span {
