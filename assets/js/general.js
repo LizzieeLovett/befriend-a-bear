@@ -22,9 +22,13 @@ function toggleHideShare() {
 
 // https://www.w3schools.com/howto/howto_js_copy_clipboard.asp to help me
 function copyToClipboard() {
-    document.getElementById("share-modal-text").innerHTML = "<textarea id='myTextArea'>" + window.location.protocol + "//" + window.location.host + "/index.html</textarea>"
+    let str = window.location.pathname;
+    let newStr = str.replace("contact", "index");
+    newStr = newStr.replace("404", "index");
+    document.getElementById("share-modal-text").innerHTML = 
+    document.getElementById("share-modal-text").innerHTML = "<textarea id='myTextArea'>" + window.location.protocol + "//" + window.location.host + newStr + "</textarea>"
     document.getElementById("myTextArea").select();
     document.execCommand("copy");
-    document.getElementById("share-modal-text").innerHTML = window.location.protocol + "//" + window.location.host + "/index.html"
+    document.getElementById("share-modal-text").innerHTML = window.location.protocol + "//" + window.location.host + newStr
     alert("Link copied to clipboard");
 }
