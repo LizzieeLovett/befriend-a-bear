@@ -192,7 +192,6 @@ function incorrectAnswerGiven() {
         optionsBox2Id.classList.add("hide-me");
         nextBoxId.classList.remove("hide-me");
         scoreTotalId.innerText--;
-        scoreTotalId.innerText--;
         scoreTotalId.classList.add("wrong-answer");
         setTimeout(function() {scoreTotalId.classList.remove("wrong-answer");}, 750);
     }
