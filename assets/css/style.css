@@ -429,8 +429,11 @@ footer a {
   /* ---------------------------404.html--------------------------- */
 
 #style-404 img {
+    display: flex;
     text-align: center;
-    width: 70%;
-    margin-left: 15%;
+    max-width: 90%;
+    width: 400px;
+    margin: 0 auto;
     margin-top: 40px;
+    border-radius: 25px;
 }
