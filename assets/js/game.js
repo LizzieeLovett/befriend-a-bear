@@ -153,6 +153,8 @@ function correctAnswerGiven() {
     optionsBox2Id.classList.add("hide-me");
     nextBoxId.classList.remove("hide-me");
     scoreTotalId.innerText++;
+    scoreTotalId.classList.add("correct-answer");
+    setTimeout(function() {scoreTotalId.classList.remove("correct-answer");}, 750);
 }
 
 function incorrectAnswerGiven() {
@@ -162,14 +164,20 @@ function incorrectAnswerGiven() {
     `);
     if (livesRemainingId.innerText == '0') {
         livesRemainingId.innerText = "";
+        livesRemainingId.classList.add("wrong-answer");
+        setTimeout(function() {livesRemainingId.classList.remove("wrong-answer");}, 750);
         questionBoxTextId.innerHTML += ". The bear is LIVID and you're out of lives! Click Try Again if you'd like to have another go at making friends.";
         nextBoxId.innerHTML = "Try Again";
         optionsBox1Id.classList.add("hide-me");
         optionsBox2Id.classList.add("hide-me");
         nextBoxId.classList.remove("hide-me");
         scoreTotalId.innerText--;
+        scoreTotalId.classList.add("wrong-answer");
+        setTimeout(function() {scoreTotalId.classList.remove("wrong-answer");}, 750);
     } else {
         livesRemainingId.innerText--;
+        livesRemainingId.classList.add("wrong-answer");
+        setTimeout(function() {livesRemainingId.classList.remove("wrong-answer");}, 750);
         questionNumber++;
         try {
             eval(`
@@ -184,6 +192,9 @@ function incorrectAnswerGiven() {
         optionsBox2Id.classList.add("hide-me");
         nextBoxId.classList.remove("hide-me");
         scoreTotalId.innerText--;
+        scoreTotalId.innerText--;
+        scoreTotalId.classList.add("wrong-answer");
+        setTimeout(function() {scoreTotalId.classList.remove("wrong-answer");}, 750);
     }
 }
 
