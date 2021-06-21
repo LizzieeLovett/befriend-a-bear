@@ -448,12 +448,12 @@ footer a {
 
   /* ---------------------------404.html--------------------------- */
 
-#style-404 img {
+#style-404 img,
+#style-404 div {
     display: flex;
     text-align: center;
     max-width: 90%;
     width: 400px;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 0 auto 30px;
     border-radius: 25px;
 }
