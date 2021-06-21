@@ -22,6 +22,7 @@ a {
 a:hover,
 #open-share:hover {
     color: #409d61;
+    cursor: pointer;
 }
 
 .hide-me {
@@ -128,7 +129,7 @@ header {
 
 .nav-col {
     text-align: right;
-    padding-right: 30px;
+    padding-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,9 +163,6 @@ header {
     .how-to-play {
         font-size: 15px;
     }
-    .nav-col {
-        padding-right: 50px;
-    }
     .rules-col {
         padding-left: 50px;
     }
@@ -177,6 +175,9 @@ header {
     .nav-item {
         display: none;
       }
+    .nav-col {
+        padding-right: 0;
+    }
   }
 
 @media screen and (min-width: 1200px) {
@@ -216,6 +217,7 @@ footer a {
 .fa-copy:hover,
 .fa-copy:focus {
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* ---------------------------index.html--------------------------- */
@@ -343,6 +345,9 @@ footer a {
         height: 40vh;
         line-height: 40vh;
     }
+    #question-box-text {
+        font-size: 20px;
+    }
     .options-box {
         display: inline-block;
         width: 30%;
@@ -415,6 +420,7 @@ footer a {
 
 .contact-submit-button {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #close-submit {
