@@ -43,6 +43,24 @@
     incorrectResponse: "Ooh you've lost a life... two heads are better than one! Team work could have really brought you closer together"
     }; 
 
+  let question6 = {
+    question: "As you're crossing the river, you grab some salmon. How do you prepare the fish for lunch?",
+    answer1: "Salmon en croute",
+    answer2: "Salmon kedgeree",
+    correctAnswer: '1',
+    correctResponse: "Correct! Even the bear knows that kedgeree is a breakfast dish",
+    incorrectResponse: "Ooh you've lost a life... even the bear knows that kedgeree is a breakfast dish. It questions your taste level"
+    }; 
+
+  let question7 = {
+    question: "Where do the two of you go to eat the dish you prepared?",
+    answer1: "A romantic spot in the trees",
+    answer2: "In the gravel next to the river",
+    correctAnswer: '2',
+    correctResponse: "Correct! The bear is starving and can't wait to tuck in",
+    incorrectResponse: "Ooh you've lost a life... the bear thinks your actions have overstepped the friendship mark and is a little uncomfortable"
+    }; 
+
 /*  
     let questionN = {
     question: "",
