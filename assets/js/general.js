@@ -10,8 +10,10 @@ copyShareId.addEventListener("click", copyToClipboard);
 
 function openShare() {
     let str = window.location.pathname;
-    let newStr = str.replace("contact", "index");
-    newStr = newStr.replace("404", "index");
+    let newStr = str.replace("index", "");
+    newStr = newStr.replace("contact", "");
+    newStr = newStr.replace("404", "");
+    newStr = newStr.replace(".html", "");
     document.getElementById("share-modal-text").innerHTML = window.location.protocol + "//" + window.location.host + newStr
     toggleHideShare()
 }
