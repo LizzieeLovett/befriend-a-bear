@@ -2,7 +2,9 @@
 
 ## Overview
 
+A website for playing a game revolving around answering questions on how to react in different scenarios whilst trying to make friends with a bear. The website features a home page with the game as well as instructions on how to play it, and a contact page to make the creator aware of any issues with the game or suggest any new content. For this website, the primary goal is for users to enjoy the game, share it with their friends and interact with the website's social media pages.
 
+This website tries to make the game as intuitive and enjoyable as possible to play. It also tries to make getting in contact with the developers easy and possible through a number of channels.
 
 # Index
 
@@ -12,17 +14,27 @@
 ### **Strategy**
 
 The business goals of this website are:
-* 
+* To raise awareness of the game and it's developer.
+* To provide distinguished and intuitive UX to enable users to spend long enough on the site long enough to share the link with friends and interact on the website's social media pages.
 
 The customer goals of this website are:
-* 
+* To play a fun game.
+* To intuitively understand how the game is played, but be able to find further information if needed.
+* To learn some information about bears.
+* To find something enjoyable they can share with their friends.
+* To intuitively navigate to the contact page to detail any issues or recommendations.
 
 Visitors to this website are searching for:
-* 
-
+* A fun and unique game.
+* A game which can be played more than once in an attempt to improve their score.
+* A game which has content based on bears and their behaviour.
 
 This website is the best way to help them achieve these things because:
-* 
+* Few games have bear-based content.
+* This website is:
+    * Intuitive and easy to navigate.
+    * Able to guide the user through the game in a way that is easy to understand.
+    * Able to guide them to the goal of the website - to get in contact via the form or social media pages.
 
 #### Client stories
 
@@ -37,7 +49,7 @@ This website is the best way to help them achieve these things because:
 
 ### **Scope**
 
-
+Based on the simple customer and business goals of Befriend a Bear, the majority of the scope of the project will focus on the game and associated feedback and interactivity with some basic features to support the business goals of the website.
 
 #### Initial Feature Plan
 
