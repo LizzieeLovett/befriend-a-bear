@@ -79,10 +79,26 @@ Whilst playing the game, feedback will highlight to the user the impacts of thei
 
 #### Wireframe mockups: 
 
+** The wireframes for the Home page have been created not to show the layout of the page upon load, but to show how and where each element will be displayed throughout gameplay.**
+
 Wireframes First Drafts:
 
 * [Home](assets/images/readme-images/wireframe-draft-home.jpg)
 * [Contact](assets/images/readme-images/wireframe-draft-contact.jpg)
+
+Upon searching for and finding images for the website, it became clear that trying to fit one image across the majority of the viewport didn't make for the best UX. Not only was the image not always centered on the bear at different screen sizes, but depending on the image position the question and response content contrast was occasionally not sufficient. To rectify this, the layout was adapted to sandwich the question and response content between two images to provide a more impactful and clear message that better suits the image ratios. 
+
+There were several additions to the Home page wireframes related to additional features added throughout the website's development. A "How to play" button was implemented within the Header of the Home page. The reason for this placement was so that it was one of the first items a user comes across and also so that it is easily accessible throughout gameplay. Another item not in the initial feature plan is the Friendship Score display which in the final Home wireframe is visible during the game next to Lives Remaining. 
+
+Another change resulting from an increased scope was the 404 error page. This was added to improve UX on the chance that the user would navigate to a non existent page. As the website currently has only two main pages, this is unlikely to happen. However, this addition does provide some future proofing should the website be developed further at a later date.
+
+The social media icons contained within the footer of each page were centered rather than being displayed on the right hand side. This decision was influenced by the business goals of the website to encourage sharing of the game through the website link and social media links.
+
+Wireframes Final Versions:
+
+* [Home](assets/images/readme-images/wireframe-final-home.jpg)
+* [Contact](assets/images/readme-images/wireframe-final-contact.jpg)
+* [404](assets/images/readme-images/wireframe-final-404.jpg)
 
 #### Implemented Features
 
