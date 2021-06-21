@@ -117,6 +117,15 @@ header {
     text-align: center;
 }
 
+.title-col>a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.title-col>a:hover {
+    color: #b1efc7;
+}
+
 .nav-col {
     text-align: right;
     padding-right: 30px;
@@ -424,6 +433,11 @@ footer a {
 .form-enquiry:focus {
     font-weight: bold;
     outline: #6b5757 auto 5px;
+}
+
+.form-control,
+.form-select {
+    background-color: #b1efc7;
 }
 
   /* ---------------------------404.html--------------------------- */
