@@ -85,7 +85,8 @@
   let openHowToPlayId = document.getElementById("open-how-to-play");
   let closeHowToPlayId = document.getElementById("close-how-to-play");
   let containerHowToPlayId = document.getElementById("how-to-play-container");
-
+  let correctFeedbackId = document.getElementById("correct-answer-feedback");
+  let wrongFeedbackId = document.getElementById("wrong-answer-feedback");
 
   nextBoxId.addEventListener("click", nextClick);
   optionsBox1Id.addEventListener("click", checkAnswer1);
@@ -223,9 +224,13 @@ function wrongAnswerFeedback() {
     setTimeout(function() {scoreTotalId.classList.remove("wrong-answer");}, 750);
     livesRemainingId.classList.add("wrong-answer");
     setTimeout(function() {livesRemainingId.classList.remove("wrong-answer");}, 750);
+    wrongFeedbackId.classList.add("wrong-answer");
+    setTimeout(function() {wrongFeedbackId.classList.remove("wrong-answer");}, 750);
 }
 
 function correctAnswerFeedback() {
     scoreTotalId.classList.add("correct-answer");
     setTimeout(function() {scoreTotalId.classList.remove("correct-answer");}, 750);
+    correctFeedbackId.classList.add("correct-answer");
+    setTimeout(function() {correctFeedbackId.classList.remove("correct-answer");}, 750);
 }
