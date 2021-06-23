@@ -87,14 +87,17 @@
   let containerHowToPlayId = document.getElementById("how-to-play-container");
   let correctFeedbackId = document.getElementById("correct-answer-feedback");
   let wrongFeedbackId = document.getElementById("wrong-answer-feedback");
+  let closeEndId = document.getElementById("close-end");
+  let containerEndId = document.getElementById("end-container");
+  let modalEndTextId= document.getElementById("end-modal-text");
 
   nextBoxId.addEventListener("click", nextClick);
   optionsBox1Id.addEventListener("click", checkAnswer1);
   optionsBox2Id.addEventListener("click", checkAnswer2);
   openHowToPlayId.addEventListener("click", toggleHideHTP);
   closeHowToPlayId.addEventListener("click", toggleHideHTP);
+  closeEndId.addEventListener("click", toggleHideEnd);
   
-
 function nextClick() {
     let nextBoxValue = nextBoxId.innerText
     if (nextBoxValue === "Start Game") {
@@ -149,6 +152,9 @@ function correctAnswerGiven() {
     catch {
         questionBoxTextId.innerHTML += ". That's the end of the game - you and the bear will be pals forever! Try again and see if you can increase your friend score.";
         nextBoxId.innerHTML = "Try Again";
+        let tempScore = parseInt(scoreTotalId.innerText) + 1;
+        modalEndTextId.innerHTML = "Your score was " + tempScore + ". Try to beat it next time!"
+        containerEndId.classList.toggle("hide-me");
     }
     optionsBox1Id.classList.add("hide-me");
     optionsBox2Id.classList.add("hide-me");
@@ -166,11 +172,14 @@ function incorrectAnswerGiven() {
         livesRemainingId.innerText = "";
         questionBoxTextId.innerHTML += ". The bear is LIVID and you're out of lives! Click Try Again if you'd like to have another go at making friends.";
         nextBoxId.innerHTML = "Try Again";
+        questionBoxTextId.innerHTML 
         optionsBox1Id.classList.add("hide-me");
         optionsBox2Id.classList.add("hide-me");
         nextBoxId.classList.remove("hide-me");
         scoreTotalId.innerText--;
         wrongAnswerFeedback();
+        modalEndTextId.innerHTML = "Your score was " + scoreTotalId.innerText + ". Try to beat it next time!"
+        containerEndId.classList.toggle("hide-me");
     } else {
         livesRemainingId.innerText--;
         questionNumber++;
@@ -182,6 +191,9 @@ function incorrectAnswerGiven() {
         catch {
             questionBoxTextId.innerHTML += ". That's the end of the game - you and the bear will be pals forever! Try again and see if you can increase your friend score.";
             nextBoxId.innerHTML = "Try Again";
+            let tempScore = parseInt(scoreTotalId.innerText) - 1;
+            modalEndTextId.innerHTML = "Your score was " + tempScore + ". Try to beat it next time!"
+            containerEndId.classList.toggle("hide-me");
         }
         optionsBox1Id.classList.add("hide-me");
         optionsBox2Id.classList.add("hide-me");
@@ -218,6 +230,11 @@ function tryAgain() {
 function toggleHideHTP() {
     containerHowToPlayId.classList.toggle("hide-me");
 }
+
+function toggleHideEnd() {
+    containerEndId.classList.toggle("hide-me");
+}
+
 
 function wrongAnswerFeedback() {
     scoreTotalId.classList.add("wrong-answer");
