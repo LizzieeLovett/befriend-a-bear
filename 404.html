@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <title>Befriend A Bear</title>
-    </head>
-    <body>
-      <!-- Header -->
-      <header>
-         <div class="row no-gutters" id="header-row">
-            <div class="col-3 rules-col">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Befriend A Bear</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="row no-gutters" id="header-row">
+        <div class="col-3 rules-col">
+        </div>
+        <div class="col-6 title-col">
+          <a href="index.html" class="game-title">Befriend A Bear</a>
+        </div>
+        <div class="col-3 nav-col">
+          <ul class="list-inline">
+            <li class="list-inline-item nav-item">
+              <a href="index.html"><span>Home</span></a>
+            </li>
+            <li class="list-inline-item nav-item">
+              <a href="contact.html"><span>Contact</span></a>
+            </li>
+          </ul>
+          <div class="dropdown-container nav-dropdown">
+            <div class="dropdown">
+              <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-bars"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              </ul>
             </div>
-            <div class="col-6 title-col">
-               <a href="index.html" class="game-title">Befriend A Bear</a>
-            </div>
-            <div class="col-3 nav-col">
-               <ul class="list-inline">
-                  <li class="list-inline-item nav-item">
-                     <a href="index.html"><span>Home</span></a>
-                  </li>
-                  <li class="list-inline-item nav-item">
-                     <a href="contact.html"><span>Contact</span></a>
-                  </li>
-               </ul>
-               <div class="dropdown-container nav-dropdown">
-                  <div class="dropdown">
-                     <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                     <i class="fas fa-bars"></i>
-                     </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="index.html">Home</a></li>
-                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
-        <div id="style-404">
-            <h1>Uh oh... I think we got lost in the woods!</h1>
-            <h3>Click on the image below to get back to your friendly bear.</h3>
-            <div>
-                     <a href="index.html">
-                        <img src="assets/images/website-images/404-bear.jpg" alt="bear-404">
-                     </a>
-            </div>
-        </div> 
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="style-404">
+      <h1>Uh oh... I think we got lost in the woods!</h1>
+      <h3>Click on the image below to get back to your friendly bear.</h3>
+      <div>
+        <a href="index.html">
+        <img src="assets/images/website-images/404-bear.jpg" alt="bear-404">
+        </a>
+      </div>
+    </div>
     <!-- Footer -->
     <footer>
       <div class="container-fluid">
-         <div class="row" id="footer-row">
-            <div>
-               <span id="open-share">
-               <i class="fas fa-share-square" aria-hidden="true"></i>
-               </span>
-               <div class="my-modal-container hide-me" id="share-container">
-                  <div class="my-modal">
-                     <h1>Share with your friends!</h1>
-                     <span id="share-modal-text"></span>
-                     <i id="share-copy" class="far fa-copy"></i>
-                     <div>
-                        <button id="close-share" class="share">Close</button>
-                     </div>
-                  </div>
-               </div>
-               <a href="https://www.facebook.com" target="_blank">
-               <i class="fab fa-facebook-square" aria-hidden="true"></i>
-               </a>
-               <a href="https://www.twitter.com" target="_blank">
-               <i class="fab fa-twitter-square" aria-hidden="true"></i> 
-               </a>       
+        <div class="row" id="footer-row">
+          <div>
+            <span id="open-share">
+            <i class="fas fa-share-square" aria-hidden="true"></i>
+            </span>
+            <div class="my-modal-container hide-me" id="share-container">
+              <div class="my-modal">
+                <h1>Share with your friends!</h1>
+                <span id="share-modal-text"></span>
+                <i id="share-copy" class="far fa-copy"></i>
+                <div>
+                  <button id="close-share" class="share">Close</button>
+                </div>
+              </div>
             </div>
-         </div>
+            <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter-square" aria-hidden="true"></i> 
+            </a>       
+          </div>
+        </div>
       </div>
-   </footer>
-   <script src="assets/js/general.js"></script>
-    </body>
+    </footer>
+    <script src="assets/js/general.js"></script>
+  </body>

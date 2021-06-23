@@ -1,134 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <title>Befriend A Bear</title>
-   </head>
-   <body>
-      <!-- Header -->
-      <header>
-         <div class="row no-gutters" id="header-row">
-            <div class="col-3 rules-col">
-               
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Befriend A Bear</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="row no-gutters" id="header-row">
+        <div class="col-3 rules-col">
+        </div>
+        <div class="col-6 title-col">
+          <a href="index.html" class="game-title">Befriend A Bear</a>
+        </div>
+        <div class="col-3 nav-col">
+          <ul class="list-inline">
+            <li class="list-inline-item nav-item">
+              <a href="index.html"><span>Home</span></a>
+            </li>
+            <li class="list-inline-item nav-item">
+              <a href="contact.html"><span>Contact</span></a>
+            </li>
+          </ul>
+          <div class="dropdown-container nav-dropdown">
+            <div class="dropdown">
+              <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-bars"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              </ul>
             </div>
-            <div class="col-6 title-col">
-               <a href="index.html" class="game-title">Befriend A Bear</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Section for the contact form -->
+      <section>
+        <h3 class="contact-form-heading">Please complete the form below to let us know of any issues or to give us more ideas for Befriend a Bear:</h3>
+        <div class="container contact-form-container">
+          <form>
+            <div class="row">
+              <div class="form-group col-12 col-md-6">
+                <label class="control-label" for="firstname">First Name</label>
+                <input type="text" class="form-control validation-check" id="firstname" placeholder="First Name" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control validation-check" id="lastname" placeholder="Last Name" required>
+              </div>
             </div>
-            <div class="col-3 nav-col">
-               <ul class="list-inline">
-                  <li class="list-inline-item nav-item">
-                     <a href="index.html"><span>Home</span></a>
-                  </li>
-                  <li class="list-inline-item nav-item">
-                     <a href="contact.html"><span>Contact</span></a>
-                  </li>
-               </ul>
-               <div class="dropdown-container nav-dropdown">
-                  <div class="dropdown">
-                     <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                     <i class="fas fa-bars"></i>
-                     </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="index.html">Home</a></li>
-                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                     </ul>
-                  </div>
-               </div>
+            <div class="row">
+              <div class="form-group">
+                <label for="emailaddress">Email Address</label>
+                <input type="email" class="form-control validation-check" id="emailaddress" placeholder="example@my-mail.co.uk" required>
+              </div>
             </div>
-         </div>
-      </header>
-      <main>
-         <!-- Section for the contact form -->
-         <section>
-            <h3 class="contact-form-heading">Please complete the form below to let us know of any issues or to give us more ideas for Befriend a Bear:</h3>
-            <div class="container contact-form-container">
-               <form>
-                  <div class="row">
-                     <div class="form-group col-12 col-md-6">
-                        <label class="control-label" for="firstname">First Name</label>
-                        <input type="text" class="form-control validation-check" id="firstname" placeholder="First Name" required>
-                     </div>
-                     <div class="form-group col-12 col-md-6">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" class="form-control validation-check" id="lastname" placeholder="Last Name" required>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="form-group">
-                        <label for="emailaddress">Email Address</label>
-                        <input type="email" class="form-control validation-check" id="emailaddress" placeholder="example@my-mail.co.uk" required>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="form-group">
-                        <label for="contact-type">Reason for contact</label>
-                        <select class="form-select validation-check" id="contact-type">
-                           <option selected>Select...</option>
-                           <option value="game-suggestion">Game suggestion</option>
-                           <option value="game-issue">Game issue</option>
-                           <option value="website-issue">Website issue</option>
-                           <option value="other">Other</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="form-group">
-                        <label for="details">Details</label>
-                        <textarea class="form-control validation-check" id="details" rows="3" placeholder=""></textarea>  
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="form-group contact-submit-button">
-                        <button id="contact-submit-button" type="button" class="form-enquiry">Enquire Now!</button>
-                     </div>
-                     <div class="my-modal-container hide-me" id="submit-container">
-                        <div class="my-modal">
-                           <span id="submit-modal-text"></span>
-                           <div>
-                              <button id="close-submit" class="submit">Close</button>
-                           </div>
-                        </div>
-                     </div>
-                     </div>
-                  </div>
-               </form>
-         </section>
-      </main>
-      <!-- Footer -->
-      <footer>
-         <div class="container-fluid">
-            <div class="row" id="footer-row">
-               <div>
-                  <span id="open-share">
-                  <i class="fas fa-share-square" aria-hidden="true"></i>
-                  </span>
-                  <div class="my-modal-container hide-me" id="share-container">
-                     <div class="my-modal">
-                        <h1>Share with your friends!</h1>
-                        <span id="share-modal-text"></span>
-                        <i id="share-copy" class="far fa-copy"></i>
-                        <div>
-                           <button id="close-share" class="share">Close</button>
-                        </div>
-                     </div>
-                  </div>
-                  <a href="https://www.facebook.com" target="_blank">
-                  <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://www.twitter.com" target="_blank">
-                  <i class="fab fa-twitter-square" aria-hidden="true"></i> 
-                  </a>       
-               </div>
+            <div class="row">
+              <div class="form-group">
+                <label for="contact-type">Reason for contact</label>
+                <select class="form-select validation-check" id="contact-type">
+                  <option selected>Select...</option>
+                  <option value="game-suggestion">Game suggestion</option>
+                  <option value="game-issue">Game issue</option>
+                  <option value="website-issue">Website issue</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
             </div>
-         </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-      <script src="assets/js/general.js"></script>
-      <script src="assets/js/form.js"></script>
-   </body>
+            <div class="row">
+              <div class="form-group">
+                <label for="details">Details</label>
+                <textarea class="form-control validation-check" id="details" rows="3" placeholder=""></textarea>  
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group contact-submit-button">
+                <button id="contact-submit-button" type="button" class="form-enquiry">Enquire Now!</button>
+              </div>
+              <div class="my-modal-container hide-me" id="submit-container">
+                <div class="my-modal">
+                  <span id="submit-modal-text"></span>
+                  <div>
+                    <button id="close-submit" class="submit">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row" id="footer-row">
+          <div>
+            <span id="open-share">
+            <i class="fas fa-share-square" aria-hidden="true"></i>
+            </span>
+            <div class="my-modal-container hide-me" id="share-container">
+              <div class="my-modal">
+                <h1>Share with your friends!</h1>
+                <span id="share-modal-text"></span>
+                <i id="share-copy" class="far fa-copy"></i>
+                <div>
+                  <button id="close-share" class="share">Close</button>
+                </div>
+              </div>
+            </div>
+            <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter-square" aria-hidden="true"></i> 
+            </a>       
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="assets/js/general.js"></script>
+    <script src="assets/js/form.js"></script>
+  </body>
 </html>
