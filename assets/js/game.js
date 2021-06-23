@@ -153,7 +153,11 @@ function correctAnswerGiven() {
         questionBoxTextId.innerHTML += ". That's the end of the game - you and the bear will be pals forever! Try again and see if you can increase your friend score.";
         nextBoxId.innerHTML = "Try Again";
         let tempScore = parseInt(scoreTotalId.innerText) + 1;
-        modalEndTextId.innerHTML = "Your score was " + tempScore + ". Try to beat it next time!"
+        if ((parseInt(scoreTotalId.innerText) +2) == (parseInt(questionNumber))) {
+            modalEndTextId.innerHTML = "Your score was " + tempScore + ". Wow top score! Once we've updated the game come back again to try and beat it!"
+        } else {
+            modalEndTextId.innerHTML = "Your score was " + tempScore + ". Try to beat it next time!"
+        }
         containerEndId.classList.toggle("hide-me");
     }
     optionsBox1Id.classList.add("hide-me");
