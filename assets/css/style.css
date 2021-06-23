@@ -352,6 +352,10 @@ footer a {
     margin-left: 33%;
 }
 
+#close-end {
+    margin-top: 10px;
+}
+
 #next-box {
     position: absolute;
     font-size: 20px;
