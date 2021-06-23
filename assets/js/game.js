@@ -1,4 +1,17 @@
-let question1 = {
+// game.js variables
+  let difficultyNumber = 3;
+  let questionNumber = 1;
+  let nextBoxId = document.getElementById("next-box");
+  let optionsBox1Id = document.getElementById("options-box-1");
+  let optionsBox2Id = document.getElementById("options-box-2");
+  let questionBoxTextId = document.getElementById("question-box-text");
+  let livesRemainingId = document.getElementById("lives-remaining");
+  let scoreTotalId = document.getElementById("score-total");
+  let correctFeedbackId = document.getElementById("correct-answer-feedback");
+  let wrongFeedbackId = document.getElementById("wrong-answer-feedback");
+  let containerEndId = document.getElementById("end-container");
+  let modalEndTextId = document.getElementById("end-modal-text");
+  let question1 = {
     question: "Whilst walking through the woods, you spot a bear behind some bushes. How do you get the bear's attention?",
     answer1: "Wolf whistle",
     answer2: "Throw a rock towards it",
@@ -64,25 +77,17 @@ let question1 = {
       incorrectResponse: "Ooh you've lost a life... "
     }; 
   */
-  let difficultyNumber = 3;
-  let questionNumber = 1;
-  let nextBoxId = document.getElementById("next-box");
-  let optionsBox1Id = document.getElementById("options-box-1");
-  let optionsBox2Id = document.getElementById("options-box-2");
-  let questionBoxTextId = document.getElementById("question-box-text");
-  let livesRemainingId = document.getElementById("lives-remaining");
-  let scoreTotalId = document.getElementById("score-total");
-  let correctFeedbackId = document.getElementById("correct-answer-feedback");
-  let wrongFeedbackId = document.getElementById("wrong-answer-feedback");
-  let containerEndId = document.getElementById("end-container");
-  let modalEndTextId = document.getElementById("end-modal-text");
+
+// game.js event listeners
   nextBoxId.addEventListener("click", nextClick);
   optionsBox1Id.addEventListener("click", checkAnswer1);
   optionsBox2Id.addEventListener("click", checkAnswer2);
   document.getElementById("open-how-to-play").addEventListener("click", toggleHideHTP);
   document.getElementById("close-how-to-play").addEventListener("click", toggleHideHTP);
   document.getElementById("close-end").addEventListener("click", toggleHideEnd);
-  
+ 
+// game.js functions
+  // nextClick deals with the state of the button with an id of next-box depending on the text inside the button.
   function nextClick() {
     let nextBoxValue = nextBoxId.innerText;
     if (nextBoxValue === "Start Game") {
@@ -94,6 +99,7 @@ let question1 = {
     }
   }
   
+  // startGame prepares the elements that need to be visible for the game to begin.
   function startGame() {
     document.getElementById("images-box-1").classList.add("hide-me-small");
     document.getElementById("question-box").classList.add("border-radius-small");
@@ -101,6 +107,7 @@ let question1 = {
     livesRemainingId.innerText = difficultyNumber;
   }
   
+  // checkAnswer1 compares option box 1 with the correct answer stored in the question array.
   function checkAnswer1() {
     let theAnswer = eval(`
       question${questionNumber}['correctAnswer']
@@ -112,6 +119,7 @@ let question1 = {
     }
   }
   
+  // checkAnswer2 compares option box 2 with the correct answer stored in the question array.
   function checkAnswer2() {
     let theAnswer = eval(`
       question${questionNumber}['correctAnswer']
@@ -123,12 +131,15 @@ let question1 = {
     }
   }
   
+  // correctAnswerGiven shows a response to the user for their correct answer and either sets up the next question or ends the game.
   function correctAnswerGiven() {
     nextBoxId.innerHTML = "Next Question";
     questionBoxTextId.innerHTML = eval(`
       question${questionNumber}['correctResponse']
       `);
     questionNumber++;
+    /* This try and catch section evaluates whether there are any more questions available. If there are no more, the game ends
+    and displays your score. If you scored full marks you get a different message in the end game modal. */
     try {
       eval(`
           question${questionNumber}['question']
@@ -151,11 +162,13 @@ let question1 = {
     correctAnswerFeedback();
   }
   
+  // incorrectAnswerGiven shows a response to the user for their incorrect answer and either sets up the next question or ends the game.
   function incorrectAnswerGiven() {
     nextBoxId.innerHTML = "Next Question";
     questionBoxTextId.innerHTML = eval(`
       question${questionNumber}['incorrectResponse']
       `);
+    // If the user has no more lives remaining, the game is ended regardless of the number of questions remaining.
     if (livesRemainingId.innerText == '0') {
       livesRemainingId.innerText = "";
       questionBoxTextId.innerHTML += ". The bear is LIVID and you're out of lives! Click Try Again if you'd like to have another go at making friends.";
@@ -170,6 +183,8 @@ let question1 = {
     } else {
       livesRemainingId.innerText--;
       questionNumber++;
+      /* This try and catch section evaluates whether there are any more questions available. If there are no more, the game ends
+      and displays your score. */
       try {
         eval(`
               question${questionNumber}['question']
@@ -189,6 +204,7 @@ let question1 = {
     }
   }
   
+  // nextQuestion prepares the next question and possible answers on the user's screen and hides anything unneccessary.
   function nextQuestion() {
     questionBoxTextId.innerHTML = eval(`
       question${questionNumber}['question']
@@ -206,6 +222,7 @@ let question1 = {
     document.getElementById("score-box").classList.remove("hide-me");
   }
   
+  // tryAgain resets the game should the user wish to play again.
   function tryAgain() {
     difficultyNumber = 3;
     questionNumber = 1;
@@ -213,14 +230,18 @@ let question1 = {
     startGame();
   }
   
+  // toggleHTP toggles the visibility of the how to play modal after clicking the how to play button.
   function toggleHideHTP() {
     document.getElementById("how-to-play-container").classList.toggle("hide-me");
   }
   
+  // toggleHTP toggles the visibility of the end game modal after completing or failing the game.
   function toggleHideEnd() {
     containerEndId.classList.toggle("hide-me");
   }
   
+  /* wrongAnswerFeedback changes the font color of the lives remaining and score total displays as well as showing the 
+  wrong-answer-feedback id in a different color. */
   function wrongAnswerFeedback() {
     scoreTotalId.classList.add("wrong-answer");
     setTimeout(function() {
@@ -236,6 +257,8 @@ let question1 = {
     }, 750);
   }
   
+   /* correctAnswerFeedback changes the font color of the score total display as well as showing the 
+  correct-answer-feedback id in a different color. */
   function correctAnswerFeedback() {
     scoreTotalId.classList.add("correct-answer");
     setTimeout(function() {

@@ -1,9 +1,15 @@
+// form.js variables
 let validationNullCheck = document.getElementsByClassName("validation-check");
+
+// form.js event listeners
 document.getElementById("contact-submit-button").addEventListener("click", validationCheck);
 document.getElementById("close-submit").addEventListener("click", function() {
   document.getElementById("submit-container").classList.toggle("hide-me");
 });
 
+// form.js functions
+/* validationCheck loops through all of the form fields checking for errors or type mismatches and then displays a message 
+in a modal that differs depending on whether errors are found */
 function validationCheck() {
   document.getElementById("submit-container").classList.toggle("hide-me");
   let failCheck;
