@@ -67,16 +67,6 @@
     correctResponse: "Correct! The bear is starving and can't wait to tuck in",
     incorrectResponse: "Ooh you've lost a life... the bear thinks your actions have overstepped the friendship mark and is a little uncomfortable"
   };
-  /*  
-      let questionN = {
-      question: "",
-      answer1: "",
-      answer2: "",
-      correctAnswer: '2',
-      correctResponse: "Correct! ",
-      incorrectResponse: "Ooh you've lost a life... "
-    }; 
-  */
 
 // game.js event listeners
   nextBoxId.addEventListener("click", nextClick);

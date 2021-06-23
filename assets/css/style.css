@@ -362,7 +362,7 @@ footer a {
 #next-box {
   position: absolute;
   font-size: 20px;
-  height: 32px;
+  height: 36px;
   width: 175px;
   bottom: 10%;
   right: 2%;
@@ -441,6 +441,9 @@ footer a {
   }
   .description-span {
     display: none;
+  }
+  .answer-feedback {
+    font-size: 25vw;
   }
 }
 

@@ -147,6 +147,10 @@ The Contact page contains a **contact form** that a user can fill in for multipl
 
 At the end of the form there is an **Enquire Now** button which triggers a **modal** to appear when clicked. The content on the modal depends on the data within the form. As well as the usual html validation checks, custom javascript loops through each form field to check for errors. If errors are detected, this is fed back to the user via the modal and the form is not submitted. If the fields pass **validation**, the user is thanked for their submission and the form is submitted.
  
+##### 404:
+
+The website also has a customised 404 html page for when the user navigates to a non existent page within the website. Whilst all of the links in the website have been tested as detailed in TESTING.md, this page is useful in case of user error or any future developments that may contain errors with page links.
+
 #### Sprint 1 Features
  
 - Game Title - Exists on every page, is distinctive and allows users to get a feel for the game. Clicking the logo returns users to the home page as per convention.
@@ -164,8 +168,17 @@ At the end of the form there is an **Enquire Now** button which triggers a **mod
 #### Sprint 2 Features (Future)
 
 - Increased Question Bank - with new ideas from the developer and from users, over time the question bank can increase.
+    **Template for new questions:**
+      let questionN = {
+      question: "",
+      answer1: "",
+      answer2: "",
+      correctAnswer: '2',
+      correctResponse: "Correct! ",
+      incorrectResponse: "Ooh you've lost a life... "
 - Difficulty Setting and Score Multiplier - with an increased bank of questions, a difficulty setting can be introduced which impacts the number of Lives a user starts the game with as well as the final score.
 - Increased Specificity in Contact Form Validation - currently the feedback provided to the user states there is a problem, but does not provide details. 
+- Randomisation - randomise the order of questions and the placement of the answer options to increase the difficulty of the game and make it less repetitive.
  
 ### **Surface**
 
