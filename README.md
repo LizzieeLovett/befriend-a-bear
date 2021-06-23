@@ -10,6 +10,27 @@ This website tries to make the game as intuitive and enjoyable as possible to pl
 
 # Index
 
+1. [UX](#ux)
+    * [Strategy](#strategy)
+    * [Scope](#scope)
+    * [Structure](#structure)
+    * [Skeleton](#skeleton)
+    * [Surface](#surface)
+1. [Technologies Used](#technologies-used)
+    * [Languages](#languages)
+    * [Libraries and Frameworks](#libraries-and-frameworks)
+    * [Tools](#tools)
+    * [Other Resources](#other-resources)
+1. [Testing](#testing)
+1. [Challenges and Reflections](#challenges-and-reflections)
+1. [Deployment](#deployment)
+    * [Deploying the Project](#deploying-the-project)
+    * [How to Run This Project Locally](#how-to-run-this-project-locally)
+1. [Credits](#credits)
+    * [Media](#media)
+    * [Code](#code)
+    * [Acknowledgements](#acknowledgements)
+    * [Disclaimer](#disclaimer)
 
 ## UX
 
