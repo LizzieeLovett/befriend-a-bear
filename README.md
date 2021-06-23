@@ -234,7 +234,11 @@ Testing information can be found in this separate [TESTING.md file](TESTING.md)
 
 ## Challenges and Reflections
 
+The main challenge for this project was determining scope. Having never made a website with custom javascript, I didn't want to overface myself only to find later that I would be unable to complete the project as intended. Instead, I underestimated what was possible to get to a **minimum viable product** as quickly as possible and developed from there.
 
+Whilst I think that this approach was appropriate for my first javascript project, I would take more time to plan in future as the flow of the code and the website itself would have probably benefitted from having a more defined scope from the beginning rather than suffering from **scope creep** throughout.
+
+I really enjoyed being able to implement logic into a project and I look forward to being able to develop this one further in future.
 
 ## Deployment
  
