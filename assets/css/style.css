@@ -5,7 +5,7 @@
 body {
   font-family: "Pangolin", sans-serif;
   font-size: 15px;
-  background-color: #165933;
+  background-color: #233e2f;
   overflow-x: hidden;
   color: #fff;
 }
@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #b1efc7;
+  color: #a6ceb4;
 }
 
 a:hover,
@@ -117,7 +117,7 @@ header {
 }
 
 .how-to-play {
-  background-color: #b1efc7;
+  background-color: #a6ceb4;
   color: #6b5757;
   border-color: #6b5757;
   font-size: 12px;
@@ -135,7 +135,7 @@ header {
 }
 
 .title-col>a:hover {
-  color: #b1efc7;
+  color: #a6ceb4;
 }
 
 .nav-col {
@@ -148,12 +148,12 @@ header {
 
 .btn-secondary {
   background-color: #165933;
-  border-color: #b1efc7;
+  border-color: #a6ceb4;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: #b1efc7;
+  background-color: #a6ceb4;
   box-shadow: 0 0 0 0.25rem rgb(92 133 105 / 50%);
 }
 
@@ -207,7 +207,7 @@ footer {
   bottom: 0;
   margin: 0;
   text-align: center;
-  background-color: #b1efc7;
+  background-color: #a6ceb4;
 }
 
 footer a {
@@ -242,7 +242,7 @@ footer a {
 }
 
 .images-box {
-  background-color: #b1efc7;
+  background-color: #a6ceb4;
   height: 150px;
   z-index: -10;
 }
@@ -367,7 +367,7 @@ footer a {
   bottom: 10%;
   right: 2%;
   text-align: center;
-  background-color: #b1efc7;
+  background-color: #a6ceb4;
   color: #6b5757;
 }
 
@@ -464,7 +464,7 @@ footer a {
 }
 
 .form-enquiry {
-  background-color: #b1efc7;
+  background-color: #a6ceb4;
   color: #6b5757;
   border-color: #6b5757;
   font-size: 20px;
@@ -479,7 +479,7 @@ footer a {
 
 .form-control,
 .form-select {
-  background-color: #b1efc7;
+  background-color: #a6ceb4;
 }
 
 
