@@ -175,7 +175,7 @@ The website also has a customised 404 html page for when the user navigates to a
       answer2: "",
       correctAnswer: '2',
       correctResponse: "Correct! ",
-      incorrectResponse: "Ooh you've lost a life... "
+      incorrectResponse: "Ooh you've lost a life... " }
 - Difficulty Setting and Score Multiplier - with an increased bank of questions, a difficulty setting can be introduced which impacts the number of Lives a user starts the game with as well as the final score.
 - Increased Specificity in Contact Form Validation - currently the feedback provided to the user states there is a problem, but does not provide details. 
 - Randomisation - randomise the order of questions and the placement of the answer options to increase the difficulty of the game and make it less repetitive.
@@ -193,7 +193,7 @@ Both fonts used in the website were from Google Fonts.
 Logo and Question Response Feedback buttons - **"Cabin Sketch"**:
 ![Cabin Sketch](assets/images/readme-images/cabin-sketch.png)
 
-The handwritten and rustic feel of this font perfectly reinforcing the game setting. Even the name of the font itself is fitting for a game set in the forest. The font weight of 700 really helped the title stand out and the feedback on the question responses to be easily receieved.
+The handwritten and rustic feel of this font perfectly reinforces the game setting. Even the name of the font itself is fitting for a game set in the forest. The font weight of 700 really helped the title stand out and the feedback on the question responses to be easily receieved.
 
 All other text - **"Pangolin"**:
 ![Pangolin](assets/images/readme-images/pangolin.png)
